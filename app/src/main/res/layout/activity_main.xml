@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_jgp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JPG Demo"
+        app:layout_constraintBottom_toTopOf="@+id/et_url"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_png"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNG Demo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jgp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_jgp"
+        app:layout_constraintRight_toLeftOf="@+id/btn_webp"
+        app:layout_constraintTop_toTopOf="@+id/btn_jgp" />
+
+    <Button
+        android:id="@+id/btn_webp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEBP Demo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jgp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_png"
+        app:layout_constraintRight_toLeftOf="@+id/btn_gif"
+        app:layout_constraintTop_toTopOf="@+id/btn_jgp" />
+
+    <Button
+        android:id="@+id/btn_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GIF Demo"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_jgp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_webp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_jgp" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_determine"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jgp" />
+
+    <Button
+        android:id="@+id/btn_determine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Format"
+        app:layout_constraintBottom_toTopOf="@+id/tv_format"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_url" />
+
+    <TextView
+        android:id="@+id/tv_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_determine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
