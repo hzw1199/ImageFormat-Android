@@ -2,7 +2,7 @@
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 [![API](https://img.shields.io/badge/API-7%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=7)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](http://opensource.org/licenses/MIT)
-[![](https://jitpack.io/v/hzw1199/ImageFormat.svg)](https://jitpack.io/#hzw1199/ImageFormat)
+[![](https://jitpack.io/v/hzw1199/ImageFormat-Android.svg)](https://jitpack.io/#hzw1199/ImageFormat-Android)
 
 ![](/media/homepage.png)
 
@@ -32,7 +32,7 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.hzw1199:ImageFormat:1.0.0'
+    compile 'com.github.hzw1199:ImageFormat-Android:1.0.0'
 }
 ```
 
